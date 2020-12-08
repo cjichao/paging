@@ -1,0 +1,148 @@
+.page-elem-field-root {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.page-elem-field {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.page-elem-field .item {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	border: 1px solid #e2e2e2;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.page-elem-field .item.head {
+	width: 60px;
+	min-width: 50px;
+}
+
+.page-elem-field .item.foot {
+	width: 60px;
+	min-width: 50px;
+}
+
+.page-elem-field .item.active {
+	background-color: #1e9fff;
+	color: #fff;
+}
+
+.page-elem-field .item:hover {
+	background-color: pink;
+	color: #fff;
+}
+
+.page-elem-field .item.item-disable {
+	color: #d2d2d2 !important;
+	cursor: not-allowed !important;
+}
+
+.page-elem-field .item.active:hover {
+	background-color: #1e9fff;
+	color: #fff;
+}
+
+.toPage {
+	margin-left: 10px;
+	width: 100px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.toPage .inputBox {
+	width: 40px;
+	height: 30px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.toPage .inputBox .inputborder {
+	width: 40px;
+	height: 30px;
+	box-sizing: border-box;
+	text-align: center;
+	outline: none;
+	border: 1px solid #e2e2e2;
+	z-index: 22;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.toPage .inputBox .show-val {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #e2e2e2;
+	box-sizing: border-box;
+}
+
+.toPage::before {
+	content: '前往';
+	display: block;
+	margin-right: 5px;
+	width: 32px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.toPage::after {
+	content: '页';
+	margin-left: 5px;
+	width: 16px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.pagesbox {
+	margin-left: 10px;
+	width: 60px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.pagesbox .currectPage {
+	color: deepskyblue;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.pagesbox .line {
+	color: deepskyblue;
+	width: 10px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.pagesbox .allPages {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}

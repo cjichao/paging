@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- <link rel="stylesheet" type="text/css" href="./css/paging.css" /> -->
+		<link rel="stylesheet" type="text/css" href="./css/paging.min.css" />
+		<!-- <script src="./js/paging.js" type="text/javascript" charset="utf-8"></script> -->
+		<script src="./js/paging.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id='test'></div>
+		<script type="text/javascript">
+			var nums = 150, // 总数
+				counts = 10; // 每页个数
+			var p = new Page({
+				el: '#test',
+				nums: nums,
+				counts: counts,
+				defaultPage: 1,
+				showHeadFoot: !false, // 显示首页尾页
+				head: '首', // 更改首页文字
+				foot: '尾', // 更改尾页文字
+				jumpToOrder: true, // 跳转到指定页
+				showNowAndAll: true, // 当前页/共几页
+				clickEvent: function(currectPage, _this) {
+					console.log('点击' + currectPage + '页');
+					// console.log(p == _this); // true
+					// _this.pages = 20; //p.pages = 20; 重新设置总页数
+					_this.nums = 300; // p.nums = 300;重新设置总数据条数 ，和设置总页数 二选一
+				}
+			});
+		</script>
+	</body>
+</html>
